@@ -33,26 +33,6 @@ h2 {
     outline: 1px solid black;
     
 }
-  
-p {
-    color: darkblue;
-    background-color: lightblue;
-    clear: right;
-    padding: 1% 2% 1% 2%;
-}
-
-#chicken, #beef, #sushi {
-    background-color: lightblue;
-    margin-right: 1%;
-    margin-left: 1%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    height: 250px;
-    float: left;
-    width: 29.33%;
-    padding: 1% 1% 1% 1%;
-    outline: 1px solid black;
-}
 
 #h2-chicken {
     background-color: peachpuff;
@@ -71,34 +51,34 @@ p {
     color: darkslateblue;
 
 }
+  
+p {
+    color: darkblue;
+    background-color: lightblue;
+    clear: right;
+    padding: 1% 2% 1% 2%;
+}
+
+.col {
+    background-color: lightblue;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 250px;
+    float: left;
+    width: 29.33%;
+    padding: 1% 1% 1% 1%;
+    outline: 1px solid black;
+}
 
   /* Simple Responsive Framework. */
-
-
 
   /********** Tablet View **********/
 @media (min-width: 768px) and (max-width: 991px) {
 
-    #chicken, #beef{
-        width: 45%;
-    }
-
-    #sushi {
-        width: 94%;
-        height: 150px auto;
-    }
-  
-    #h2-chicken  {
-        font-size: 125%;
-        float: right;
-        position: relative;
-        padding: 1% 2% 1% 2%;
-        width: auto;
-        margin-top: -2.3%;
-        margin-right: -2.2%;
-    }
-
-    #h2-beef  {
+    
+    #h2-chicken, #h2-beef  {
         font-size: 125%;
         float: right;
         position: relative;
@@ -116,29 +96,30 @@ p {
         width: auto;
         margin-top: -1.1%;
         margin-right: -1.1%;
+    } 
+
+    .col.col-md-6 {
+        width: 45%;
+    }
+
+    .col.col-md-12 {
+        width: 94%;
+        height: 150px auto;
     }
     
 }
 
-    
-  
-
 /********** Mobile View **********/
 @media (max-width: 767px) {
-    #chicken {
+    
+
+    .col.col-sm-12-left {
         width: auto;
         margin-right: 6%;
-        margin-left:  6%;;
+        margin-left:  6%;
     }
-    
-    #beef {
-        width: auto;
-        margin-top: 5%;
-        margin-right: 6%;
-        margin-left: 6%;
-    }
-    
-    #sushi {
+
+    .col.col-sm-12 {
         width: auto;
         margin-top: 5%;
         margin-right: 6%;
@@ -156,3 +137,5 @@ p {
     
     }
 }
+
+
